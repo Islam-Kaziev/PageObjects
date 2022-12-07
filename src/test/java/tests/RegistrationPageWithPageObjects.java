@@ -1,8 +1,5 @@
 package tests;
 
-import Pages.RegistrationPage;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -10,34 +7,23 @@ import java.io.File;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationPageWithPageObjects {
+public class RegistrationPageWithPageObjects extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-
-    }
     @Test
     void StudentRegistrationForm() {
         String firstName = "Islam";
         String lastName = "Kaziev";
         String email = "Islam@Vasiya.com";
-        new RegistrationPage().openPage();
-        new RegistrationPage().setFirstName(firstName);
-        new RegistrationPage().setFirstName(lastName);
-        new RegistrationPage().setFirstName(email);
-        $("#gender-radio-1").doubleClick();
-        $("#userNumber").setValue("9111111111");
-        $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").click();
-        $(".react-datepicker__month-select").selectOption("November");
-        $(".react-datepicker__year-select").click();
-        $(".react-datepicker__year-select").selectOption("1994");
-        $(".react-datepicker__day--016").click();
+
+        registrationPage.openPage()
+                .setFirstName(firstName)
+                .setLastName(lastName)
+                .setEmail(email)
+                .setGender("Other")
+                .setPhone("9111111111")
+                .setBirthDate("30", "July", "2008");
+
         $("#subjectsInput").click();
         $("#subjectsInput").setValue("English").pressEnter();
         $("#subjectsInput").setValue("Math").pressEnter();
@@ -52,8 +38,8 @@ public class RegistrationPageWithPageObjects {
 
         //checking the data after sending
         $(".modal-header").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text (firstName), text(lastName), text("Islam@Vasiya.com"),
-        text("9111111111"), text("16 November,1994"), text("English, Maths"), text("Music"), text("dog.jpeg"),
-        text("KBR, Nalchik, Lenina, 32, B"), text("Rajasthan Jaiselmer"));
+        $(".table-responsive").shouldHave(text(firstName), text(lastName), text("Islam@Vasiya.com"),
+                text("9111111111"), text("16 November,1994"), text("English, Maths"), text("Music"), text("dog.jpeg"),
+                text("KBR, Nalchik, Lenina, 32, B"), text("Rajasthan Jaiselmer"));
     }
 }
