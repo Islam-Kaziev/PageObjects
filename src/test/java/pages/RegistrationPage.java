@@ -1,11 +1,9 @@
-package Pages;
+package pages;
 
-import Pages.components.CalendarComponent;
-import Pages.components.PictureUploader;
-import Pages.components.RegistrationResultsModal;
+import pages.components.CalendarComponent;
+import pages.components.PictureUploader;
+import pages.components.RegistrationResultsModal;
 import com.codeborne.selenide.SelenideElement;
-
-import java.util.Calendar;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -20,9 +18,9 @@ public class RegistrationPage {
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             dateOfBirthInput = $("#dateOfBirthInput"),
-            SubjectsInput = $("#subjectsInput"),
+            subjectsInput = $("#subjectsInput"),
             userEmail = $("#userEmail"),
-            Gender = $("#gender-radio-1"),
+            gender = $("#gender-radio-1"),
             userNumber = $("#userNumber");
 
     public RegistrationPage openPage() {
@@ -50,7 +48,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setGender(String value) {
-        Gender.doubleClick();
+        gender.doubleClick();
 
         return this;
     }
@@ -81,9 +79,9 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setSubjects(String firstSubjects, String secondSubjects) {
-        SubjectsInput.click();
-        SubjectsInput.setValue(firstSubjects).pressEnter();
-        SubjectsInput.setValue(secondSubjects).pressEnter();
+        subjectsInput.click();
+        subjectsInput.setValue(firstSubjects).pressEnter();
+        subjectsInput.setValue(secondSubjects).pressEnter();
 
         return this;
     }
