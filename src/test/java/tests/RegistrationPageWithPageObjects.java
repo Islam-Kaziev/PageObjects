@@ -10,7 +10,7 @@ public class RegistrationPageWithPageObjects extends TestBase {
         String lastName = "Kaziev";
         String email = "Islam@Vasiya.com";
         String gender = "Male";
-        String Phone = "9111111111";
+        String phone = "9111111111";
         String birthDay = "30";
         String birthMonth = "June";
         String birthYear = "2008";
@@ -26,7 +26,7 @@ public class RegistrationPageWithPageObjects extends TestBase {
                 .setLastName(lastName)
                 .setEmail(email)
                 .setGender(gender)
-                .setPhone(Phone)
+                .setPhone(phone)
                 .setBirthDate(birthDay, birthMonth, birthYear)
                 .setSubjects(firstSubjects, secondSubjects)
                 .setHobbies(hobbies)

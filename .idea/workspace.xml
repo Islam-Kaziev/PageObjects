@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4625dfc5-f073-47ff-88df-6fdca87368b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/components/PictureUploader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/components/RegistrationResultsModal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/components/CalendarComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/components/CalendarComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/components/PictureUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/components/PictureUploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/components/RegistrationResultsModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/components/RegistrationResultsModal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationPageWithPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationPageWithPageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +34,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Demoqa-test-16 PageObjects" type="f1a62948:ProjectNode" />
+                <item name="PageObjects" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -225,6 +227,7 @@
       <workItem from="1668605623397" duration="11612000" />
       <workItem from="1670094846200" duration="350000" />
       <workItem from="1670095250392" duration="751000" />
+      <workItem from="1670819272353" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1668459449013</created>
@@ -289,7 +292,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670447155245</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished PageObjects homework">
+      <created>1670531224860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531224860</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Deleted trash">
+      <created>1670531426510</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531426510</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +319,8 @@
     <MESSAGE value="Finished my homework" />
     <MESSAGE value="PageObjects" />
     <MESSAGE value="PageObjects new changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="PageObjects new changes" />
+    <MESSAGE value="Finished PageObjects homework" />
+    <MESSAGE value="Deleted trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted trash" />
   </component>
 </project>
